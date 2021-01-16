@@ -1,9 +1,9 @@
 main:
-  - title: "blog/博客"
-    url: /blog/
-  - title: "Categories(建设中/under building）"
+  - title: "post"
+    url: /post/
+  - title: "Categories"
     url: /categories/
-  - title: "Tags(建设中/under building）"
+  - title: "Tags"
     url: /tags/
-  - title: "About/关于我"
+  - title: "About"
     url: /about/
