@@ -1,17 +1,49 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>My Website - Others</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-  <nav>
-    <ul>
-      <li><a href="work.html">Work</a></li>
-      <li><a href="education.html">Education</a></li>
-      <li><a href="hobby.html">Hobby</a></li>
-      <li><a href="others.html">Others</a></li>
-    </ul>
-  </nav>
-  <h1>Others Page</h1>
-  <p>This
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="work.html">Work</a>
+    <a href="education.html">Education</a>
+    <a href="hobby.html">Hobby</a>
+    <a href="others.html" class="active">Others</a>
+  </div>
+
+  <div class="content">
+    <h1>Others</h1>
+    <p>Welcome to the Others page!</p>
+
+    <h2>Feedback Form</h2>
+    <form id="feedback-form">
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" required></textarea><br>
+
+      <label for="rating">Rating:</label><br>
+      <input type="radio" id="1" name="rating" value="1">
+      <label for="1">1 star</label><br>
+      <input type="radio" id="2" name="rating" value="2">
+      <label for="2">2 stars</label><br>
+      <input type="radio" id="3" name="rating" value="3">
+      <label for="3">3 stars</label><br>
+      <input type="radio" id="4" name="rating" value="4">
+      <label for="4">4 stars</label><br>
+      <input type="radio" id="5" name="rating" value="5">
+      <label for="5">5 stars</label><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
