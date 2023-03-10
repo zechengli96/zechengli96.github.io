@@ -33,3 +33,20 @@ modeToggleBtn.addEventListener("click", () => {
   const body = document.body;
   body.classList.toggle("dark-mode");
 });
+
+const likeBtn = document.getElementById("like-btn");
+
+likeBtn.addEventListener("click", () => {
+  alert("Thank you for liking this page!");
+});
+
+const dropdown = document.querySelector(".dropdown");
+const dropdownContent = document.querySelector(".dropdown-content");
+
+dropdown.addEventListener("mouseenter", () => {
+  dropdownContent.style.display = "block";
+});
+
+dropdown.addEventListener("mouseleave", () => {
+  dropdownContent.style.display = "none";
+});
