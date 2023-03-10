@@ -76,3 +76,33 @@ p {
   background-color: #333;
   color: #fff;
 }
+
+/* new styles for dropdown */
+.dropdown:hover .dropbtn {
+  background-color: #fff;
+  color: #333;
+}
+
+.dropdown-content a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* new styles for mode toggle button */
+.mode-toggle {
+  margin-right: 10px;
+}
+
+#mode-toggle-btn {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#mode-toggle-btn:hover {
+  background-color: #333;
+  color: #fff;
+}
