@@ -1,4 +1,5 @@
 const form = document.getElementById("feedback-form");
+const body = document.getElementsByTagName("body")[0];
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -20,9 +21,4 @@ form.addEventListener("submit", (event) => {
   if (!isValidEmail) {
     alertMsg += "Email format is invalid. ";
   }
-  alertMsg += `You rated ${rating} stars.`;
-  alert(alertMsg);
-
-  // Reset the form
-  form.reset();
-});
+  alert
