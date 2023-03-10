@@ -25,18 +25,4 @@ nav ul li {
 
 nav ul li a {
   color: #fff;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-nav ul li a:hover {
-  background-color: #fff;
-  color: #333;
-}
-
-.dropdown {
-  position: relative;
-}
-
-.dropdown-content
+ 
