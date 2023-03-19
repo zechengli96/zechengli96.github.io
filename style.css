@@ -106,3 +106,59 @@ p {
   background-color: #333;
   color: #fff;
 }
+
+
+
+body {
+  background-color: white;
+  color: black;
+}
+
+body.dark {
+  background-color: black;
+  color: white;
+}
+
+/* style for the mode toggle button */
+.mode-toggle {
+  float: right;
+  margin-right: 20px;
+}
+
+.mode-toggle button {
+  font-size: 1.2em;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.mode-toggle button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* style for the dropdown menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration:
+
