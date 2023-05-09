@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>My Website - Education</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <nav>
+  <head>
+    <title>Love and Peace</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      /* CSS to move the image to the right */
+      img {
+        float: right;
+        margin-left: 20px; /* add some space between the image and text */
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="work.html">Work Experience</a></li>
+        <li><a href="education.html">Education Background</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Personal Experience/Life/Hobbies</a>
+          <div class="dropdown-content">
+            <a href="#">Music</a>
+            <a href="#">Sports</a>
+            <a href="#">Travel</a>
+          </div>
+        </li>
+        <li><a href="others.html">Contact Me</a></li>
+        <li class="mode-toggle"><button onclick="myFunction()">Toggle dark mode</button></li>
+      </ul>
+    </nav>
+    <h1>Welcome to Zecheng Li (ˈzɪ
+ˈtʃɛŋ)'s website</h1>
+    <p>hi, welcome.</p>
+    <img src="WechatIMG78636.jpeg" alt="Zecheng's picture" width="400" height="300">
+    <p>This website is not just for HR or scanning robots, but for humans with deep empathy. On this website, I will talk about:</p>
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="work.html">Working Experience</a></li>
-      <li><a href="education.html">Education Background</a></li>
-      <li><a href="hobby.html">Personal life and hobbies</a></li>
-      <li><a href="others.html">Others</a></li>
+      <li>My working experience</li>
+      <li>Education Background</li>
+      <li>Personal Life</li>
+      <li>Others, courses, and anything</li>
     </ul>
-  </nav>
-  <h1>Education Page</h1>
-  <a href="2022 SDE Zecheng Li.pdf" target="_blank">
-    <button>CV</button>
-  </a>
-  <p>Click to open CV</p>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
