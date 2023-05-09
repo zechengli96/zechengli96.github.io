@@ -1,118 +1,40 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Tic Tac Toe</title>
-  <style>
-    table, th, td {
-      border: 1px solid black;
-    }
-    th, td {
-      width: 50px;
-      height: 50px;
-      text-align: center;
-      font-size: 30px;
-      font-weight: bold;
-    }
-    nav {
-  background-color: #333;
-  color: #fff;
-  height: 50px;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav ul li {
-  margin: 0 10px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 5px;
-}
-  </style>
-</head>
-<body>
-  <nav>
-    <ul>
-      <li><a href="work.html">Work</a></li>
-      <li><a href="education.html">Education</a></li>
-      <li><a href="hobby.html">Hobby</a></li>
-      <li><a href="others.html">Others</a></li>
+  <head>
+    <title>Love and Peace</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      /* CSS to move the image to the right */
+      img {
+        float: right;
+        margin-left: 20px; /* add some space between the image and text */
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="work.html">Work Experience</a></li>
+        <li><a href="education.html">Education Background</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Personal Experience/Life/Hobbies</a>
+          <div class="dropdown-content">
+            <a href="#">Music</a>
+            <a href="#">Sports</a>
+            <a href="#">Travel</a>
+          </div>
+        </li>
+        <li><a href="others.html">Contact Me</a></li>
+        <li class="mode-toggle"><button onclick="myFunction()">Toggle dark mode</button></li>
+      </ul>
+    </nav>
+      <ul>
+      <li>My working experience</li>
+      <li>Education Background</li>
+      <li>Personal Life</li>
+      <li>Others, courses, and anything</li>
     </ul>
-  </nav>
-  <h1>Tic Tac Toe</h1>
-  <table>
-    <tr>
-      <td id="1"></td>
-      <td id="2"></td>
-      <td id="3"></td>
-    </tr>
-    <tr>
-      <td id="4"></td>
-      <td id="5"></td>
-      <td id="6"></td>
-    </tr>
-    <tr>
-      <td id="7"></td>
-      <td id="8"></td>
-      <td id="9"></td>
-    </tr>
-  </table>
-  <script>
-    var currentPlayer = "X";
-    var cells = document.getElementsByTagName("td");
-    for (var i = 0; i < cells.length; i++) {
-      cells[i].addEventListener("click", function() {
-        if (this.innerHTML === "") {
-          this.innerHTML = currentPlayer;
-          if (checkWin()) {
-            alert(currentPlayer + " wins!");
-            resetGame();
-          } else if (checkDraw()) {
-            alert("Draw!");
-            resetGame();
-          } else {
-            currentPlayer = currentPlayer === "X" ? "O" : "X";
-          }
-        }
-      });
-    }
-    function checkWin() {
-      var winningCombos = ["123", "456", "789", "147", "258", "369", "159", "357"];
-      for (var i = 0; i < winningCombos.length; i++) {
-        var combo = winningCombos[i];
-        var a = document.getElementById(combo.charAt(0)).innerHTML;
-        var b = document.getElementById(combo.charAt(1)).innerHTML;
-        var c = document.getElementById(combo.charAt(2)).innerHTML;
-        if (a !== "" && a === b && b === c) {
-          return true;
-        }
-      }
-      return false;
-    }
-    function checkDraw() {
-      for (var i = 0; i < cells.length; i++) {
-        if (cells[i].innerHTML === "") {
-          return false;
-        }
-      }
-      return true;
-    }
-    function resetGame() {
-      for (var i = 0; i < cells.length; i++) {
-        cells[i].innerHTML = "";
-      }
-      currentPlayer = "X";
-    }
-  </script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
