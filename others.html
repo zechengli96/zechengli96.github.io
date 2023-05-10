@@ -10,7 +10,7 @@
         margin-left: 20px; /* add some space between the image and text */
       }
       
-      /* CSS to position the header menu at the top */
+      /* CSS for the header menu */
       nav {
         position: fixed;
         top: 0;
@@ -38,20 +38,19 @@
         color: #333; /* Change the text color as desired */
       }
 
-      /* CSS to center the iframe */
+      /* CSS for the main content */
       body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
         padding-top: 40px; /* Add top padding to make space for the fixed header */
+        margin: 0;
+        font-family: Arial, sans-serif; /* Change the font as desired */
       }
-      
-      iframe {
-        width: 80%; /* Adjust the width as desired */
-        height: 80%; /* Adjust the height as desired */
+
+      h1 {
+        text-align: center;
+      }
+
+      p {
+        margin-bottom: 20px;
       }
     </style>
   </head>
@@ -66,7 +65,7 @@
         <li class="mode-toggle"><button onclick="myFunction()">Toggle dark mode</button></li>
       </ul>
     </nav>
-
+    
     <!-- Insert the iframe below this comment -->
     <iframe frameborder="0" src="https://bestsolaris.com/solaris.php?postid=32783" allowfullscreen></iframe>
 
