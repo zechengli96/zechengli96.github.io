@@ -23,6 +23,17 @@
       </ul>
     </nav>
     <h1>Please contact me at zli45@unl.edu</h1>
-        <script src="script.js"></script>
+
+    <form action="submit.php" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <script src="script.js"></script>
   </body>
 </html>
