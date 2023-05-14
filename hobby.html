@@ -9,6 +9,14 @@
       float: right;
       margin-left: 20px; /* add some space between the image and text */
     }
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+    .image-container img {
+      margin: 10px;
+    }
   </style>
 </head>
 <body>
@@ -30,20 +38,26 @@
   <main>
     <section>
       <h2>Politics</h2>
-      <img src="421684083934_.pic.jpg" alt="Photography">
-      <img src="441684083936_.pic.jpg" alt="Photography">
+      <div class="image-container">
+        <img src="421684083934_.pic.jpg" alt="Photography">
+        <img src="441684083936_.pic.jpg" alt="Photography">
+      </div>
       <p>I support UBI, and Andrew Yang</p>
     </section>
 
     <section>
       <h2>Gardening</h2>
-      <img src="hobby2.jpg" alt="Gardening">
+      <div class="image-container">
+        <img src="hobby2.jpg" alt="Gardening">
+      </div>
       <p>Spending time in my garden is one of my favorite hobbies. I find joy in nurturing plants, watching them grow, and creating a beautiful and serene outdoor space. Gardening also helps me relax and unwind.</p>
     </section>
 
     <section>
       <h2>Cooking</h2>
-      <img src="hobby3.jpg" alt="Cooking">
+      <div class="image-container">
+        <img src="hobby3.jpg" alt="Cooking">
+      </div>
       <p>I love experimenting with different ingredients and flavors in the kitchen. Cooking allows me to unleash my creativity and create delicious meals for myself and my loved ones. Trying new recipes and mastering cooking techniques is both exciting and satisfying.</p>
     </section>
 
