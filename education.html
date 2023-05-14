@@ -13,9 +13,14 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;
+      align-items: flex-start; /* Align images to the top */
+      gap: 20px; /* Add some space between the images */
     }
     .image-container img {
-      margin: 10px;
+      max-width: 100%; /* Ensure the images fit within their container */
+    }
+    .image-container figcaption {
+      margin-top: 10px; /* Add some space below the image captions */
     }
   </style>
 </head>
@@ -44,8 +49,7 @@
     <ul>
       <li>Bachelor of Computer Science</li>
       <li>I had 3.415 GPA. I joined my first-ever standard regional ACM programming contest in St. Joseph (Maybe I spelled it wrongly) Missouri, my team got 3rd place out of 25 teams, I solved 2.5 out of 4 questions.</li>
-      <li>I attended a lot of Hackathons, MinneHack (U of Minnesota), HackMIT, HackWashU, lots of good memori<img src="481684083938_.pic.jpg" alt="Pole Vaulting" width="500" height="300"> 
-        <figcaption>At Anhui Sports Game 2014, Pole vaulting final</figcaption>es</li> 
+      <li>I attended a lot of Hackathons, MinneHack (U of Minnesota), HackMIT, HackWashU, lots of good memories</li> 
       <li>When I graduated and started working, I self-taught GRE and got 320 points, 152 and 168, I think, pretty average but I was proud of it.</li>
       
     </ul>
